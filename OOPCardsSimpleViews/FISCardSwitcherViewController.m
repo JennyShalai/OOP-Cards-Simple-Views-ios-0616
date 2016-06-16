@@ -3,6 +3,11 @@
 #import "FISCardSwitcherViewController.h"
 
 @interface FISCardSwitcherViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+@property (weak, nonatomic) IBOutlet UILabel *middleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
+
+
 
 @end
 
@@ -22,4 +27,36 @@
                                                 rank:@"10"];
 }
 
+- (IBAction)threeOfSpadesButton:(id)sender {
+    if(self.threeOfSpades) {
+        self.topLabel.text = self.threeOfSpades.cardLabel;
+        self.middleLabel.text = self.threeOfSpades.cardLabel;
+        self.bottomLabel.text = self.threeOfSpades.cardLabel;
+    }
+}
+
+- (IBAction)fourOfClubsButton:(id)sender {
+    if(self.fourOfClubs) {
+        self.topLabel.text = self.fourOfClubs.cardLabel;
+        self.middleLabel.text = self.fourOfClubs.cardLabel;
+        self.bottomLabel.text = self.fourOfClubs.cardLabel;
+    }
+}
+
+- (IBAction)eightOfDiamondsButton:(id)sender {
+    if(self.eightOfDiamonds) {
+        self.topLabel.text = self.eightOfDiamonds.cardLabel;
+        self.middleLabel.text = self.eightOfDiamonds.cardLabel;
+        self.bottomLabel.text = self.eightOfDiamonds.cardLabel;
+    }
+    
+}
+
+- (IBAction)tenOfHeartsButton:(id)sender {
+    if(self.tenOfHearts) {
+        self.topLabel.text = self.tenOfHearts.cardLabel;
+        self.middleLabel.text = self.tenOfHearts.cardLabel;
+        self.bottomLabel.text = self.tenOfHearts.cardLabel;
+    }
+}
 @end
